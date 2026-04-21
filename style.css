@@ -1,0 +1,163 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+nav{
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3px 10px;
+ 
+}
+.logo{
+  border-radius: 50%;
+  position: relative;
+}
+.logo i{
+  
+  font-size: 40px;
+  background-color: rgb(245,183,228);
+  border-radius: 50%;
+  transition: 2s;
+}
+.logo i:hover{
+  color: white;
+  transform: scale(1.2);
+}
+.menu{
+  height: 40vh;
+  width: 100vw;
+  color: black;
+  background-color: grey;
+  position: absolute;
+  right: 0;
+  top: 100%;
+  padding-left: 20px;
+  display: none;
+}
+.menu li{
+  list-style: none;
+  width: 100%;
+}
+.menu li a{
+  text-decoration: none;
+   width: 100%;
+   display: block;
+   font-size: 20px;
+   color: white;
+   padding: 7px;
+}
+.logo:hover ul{
+  display: block;
+}
+.content{
+  padding-top: 80px;
+  padding-left: 50px;
+}
+.content h1{
+  padding-top: 15px;
+}
+.pic{
+  position: relative;
+}
+.pic img{
+  height: 200px; 
+  width: 100%;
+  background-size: cover;
+}
+.pic button{
+  position: absolute;
+  height: 50px; 
+  width: 130px;
+  font-size: bold;
+  background-color: black;
+  color: white;
+  top: 10px;
+  left: 60px;
+  border: none;
+}
+.pink{
+  height: 40vh;
+  width: 100%;
+  color: white;
+  background-image: url("img-2.jpg");
+  background-size: cover;
+  padding: 30px;
+  line-height: 30px;
+}
+.pink button{
+  padding: 10px 25px;
+  font-size: 18px;
+  background-color: white;
+  color: black;
+  margin: 20px 50px;
+  border: none;
+}
+.cat{
+  height: 50vh;
+  width: 100%;
+  background-image: url("img3.jpg");
+  background-size: cover;
+  padding: 30px;
+}
+.cat button{
+  padding: 10px 20px;
+  margin-top: 25px;
+  margin-left: 25px;
+  background-color: black;
+  color: white;
+  border: none;
+}
+.foot{
+  height: 500px;
+  background-color: black;
+  margin-top: 70px;
+  color: white;
+  text-align: center;
+  padding-top: 100px;
+}
+.line{
+  color: red;
+  width: 50px;
+  text-align: center;
+  margin:30px auto;
+}
+.foot h2{
+  margin-top: 150px;
+}
+.youtube{
+  margin: 50px;
+  display: flex;
+  justify-content: center;
+}
+.youtube li{
+  list-style: none;
+  padding-left: 10px;
+ 
+}
+.youtube li a{
+  color: white;
+ 
+}
+.youtube li a:hover{
+   background-color: red;
+   text-decoration: underline;
+}
+.googlee{
+display: flex;
+justify-content: center;
+}
+.copy{
+  text-align: center;
+  padding: 10px;
+}
+@media (min-width:361px) and (max-width:720px){
+  .pink,.cat{
+    height: 100vh;
+  }
+  .logo ul{
+    height: 70vh;
+  }
+}
